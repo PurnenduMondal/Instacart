@@ -18,7 +18,7 @@ const Footer = () => {
                 {/* Bottom */}
                 <div className="flex gap-3">
                     {footerData.brand.socials.map((social, i) => (
-                      <a href={social.link} className="size-9 rounded-lg bg-white/10 flex-center hover:bg-white/2"><social.icon className="size-4"/></a>
+                      <a key={i} href={social.link} className="size-9 rounded-lg bg-white/10 flex-center hover:bg-white/2"><social.icon className="size-4"/></a>
                     )) }
                 </div>
               </div>
